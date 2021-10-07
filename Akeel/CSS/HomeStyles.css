@@ -1,0 +1,610 @@
+
+/*Header Logo*/
+.logo
+{
+		display:block;
+		width:100px;
+		height:100px;
+}
+
+/*--------------------------------------------------*/
+
+/* Header Div parts */
+div.logoP
+{
+	width:8%;
+	height:110px;
+	padding:5px;
+	float:left;
+	background-color: transparent;
+}
+h1
+{
+	font-family:'Gabriela';
+	font-size:50px;
+}
+
+div.name
+{
+	background-color:transparent;
+	width:38%;
+	height:110px;
+	float:left;
+	padding-bottom:20px;
+	color:black;
+	
+}
+div.Search
+{
+	background-color:transparent;
+	width:38%;
+	height:110px;
+	padding:5px;
+	float:left;
+	padding-top:25px;
+	color:white;
+	
+}
+div.align
+{
+	background-color:white;
+	align-items: center;
+	display: flex;
+	height:85px;
+	width:100%;
+	justify-content: center;
+	background-color: transparent;
+}
+div.padding
+{
+	padding-top: 15px;
+}
+
+
+/*--------------------------------------------------*/
+
+/* Header Navagation Buttons */
+
+div.buttonGroup
+{
+	background-color:transparent;
+	width:100%;
+	height:55px;
+	padding:5px;
+	float:left;
+}
+.button {
+  background-color: #5C2018;
+  border-color:transparent;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  float: left;
+  opacity: 0.9;
+}
+
+.btnsize
+{
+    height:45px;
+    width:25%;
+}
+.buttonGroup .button:hover 
+{
+  background-color: #C2B9B0;
+  opacity: 1;
+}
+
+/*--------------------------------------------------*/
+
+
+/*Footer content table icon images*/
+img.Op1
+{
+  max-width: 40px;
+  height: 40px;
+}
+
+img.Op2
+{
+  max-width: 50px;
+  height: 40px;
+}
+img.star
+{
+  max-width: 50px;
+  height: 50px;
+}
+
+/*--------------------------------------------------*/
+
+
+/*Search Bar*/
+#Sch input[type=text]
+{
+	  float: right;
+	  padding: 6px;
+	  border: none;
+	  margin-top: 8px;
+	  margin-right: 16px;
+	  font-size: 17px;
+	  text-align:left;
+}
+/*--------------------------------------------------*/
+
+/*All Button*/
+button
+{
+		padding:5px 5px;
+		width:100px;
+		background-color:#302f2b;
+		color:white;
+		cursor: pointer;
+	
+	
+}
+
+.btn
+{
+		padding:5px 5px;
+		width:120px;
+			
+}
+
+#bt1
+{
+	background-color:#1384d4;
+	
+}
+
+#bt2
+{
+	background-color:#1384d4;
+}
+
+#btn3
+{
+		padding:8px 5px;
+		height:25px;
+		width:30px;
+		margin-top:60px;
+		
+}
+.otherallButton
+{
+	border:none;
+}
+/*--------------------------------------------------*/
+
+/* HyperLinks*/
+
+a
+{
+	text-decoration:none;
+	color:blue;
+}
+/*--------------------------------------------------*/
+
+/* for Luxury Hotel,Villa and HDay Resort iamges */
+
+.autoFitimage
+{
+	margin: auto;
+}
+/*--------------------------------------------------*/
+
+/* Slideshow And Background Image*/
+
+* {box-sizing: border-box}
+
+body 
+{
+	background-image: url("../Images/BG4.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+
+}
+.mySlides 
+{
+	display: none;
+}
+img 
+{
+	vertical-align: middle;
+	
+}
+
+/* Slideshow container */
+.slideshow-container 
+{
+  max-width: 100%;
+  position: bottom;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev 
+{
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  width: auto;
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  margin-top:250px;
+
+}
+.next 
+{
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  width: auto;
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  margin-top:250px;
+  margin-right:20px;
+
+}
+
+/* Position the "next button" to the right */
+.next 
+{
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover 
+{
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text 
+{
+  color: #f2f2f2;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot 
+{
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  margin: auto;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover 
+{
+  background-color: #639c02;
+}
+
+/* Fading animation */
+.fade 
+{
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade 
+{
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+div.leftt
+{
+	background-color:transparent;
+	width:100%;
+	padding:5px;
+	float:left;
+}
+
+
+/*--------------------------------------------------*/
+/* Body view our and make res buttons*/
+.MVbuttons
+{
+	border:none;
+	width:500px;
+	font-size:15px;
+	height:35px;
+	background-color: #000000;
+	border-radius: 8px;
+}
+.MVbuttons:hover 
+{
+  background-color: #e36939;
+}
+.btnDiv
+{
+	margin-left:230px;
+	margin-top:30px;
+}
+
+/*--------------------------------------------------*/
+
+
+/* Body Content Paragraph part */
+
+#p1
+{
+	font-family:'DancingScript';
+	text-align:center;
+	color:#003c52;
+	font-size:60px;
+	
+}
+
+#p2
+{
+	text-align:center;
+	color:#f57f00;
+	font-size:30px;
+}
+.FontS	/* city name links part */
+{
+	color:#baf7d5;
+	font-size:20px;
+}
+#FontSc	/* Nearby links part */
+{
+	color:blue;
+	font-size:20px;
+}
+
+.linkPara
+{
+	font-size:25px;
+}
+.FontS:hover 
+{
+  color: #639c02;
+}
+/*--------------------------------------------------*/
+
+/* Body Content last part */
+
+div.left
+{
+	background-color:transparent;
+	width:31%;
+	padding:5px;
+	float:left;
+}
+
+div.middle
+{
+	background-color:transparent;
+	width:31%;
+	padding:5px;
+	float:left;
+	
+}
+
+div.right
+{
+	background-color:transparent;
+	width:31%;
+	padding:5px;
+	float:right;
+	
+}
+
+div.Whitespace 
+{
+    float:left;
+    width: 2%;
+	background-color:transparent;
+}
+
+#lxh
+{
+	width:450px;
+	height:380px;
+	display:block;
+	border-radius: 8px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#Villa
+{
+	max-width:450px;
+	height:380px;
+	display:block;
+	border-radius: 8px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#HoliRes
+{
+	max-width:450px;
+	height:380px;
+	display:block;
+	border-radius: 8px;
+	margin-left: auto;
+	margin-right: auto;
+}
+/*--------------------------------------------------*/
+
+/* Footer Div parts */
+
+div.explore
+{
+	width:10%;
+	height:125px;
+	padding:5px;
+	float:left;
+	justify-content: center;
+	padding-top: 0px;
+	background-color: transparent;
+	font-size:20px;
+	line-height: 160%;
+}
+
+div.Rights
+{
+	width:30%;
+	height:125px;
+	padding:5px;
+	float:left;
+	justify-content: center;
+	padding-top: 50px;
+	background-color: transparent;
+	font-size:20px;
+	
+}
+
+div.pay
+{
+	width:30%;
+	height:125px;
+	float:left;
+	justify-content: center;
+	padding-top: 25px;
+	padding-left:20px;
+	background-color: transparent;
+}
+
+div.socialM
+{
+	width:20%;
+	height:125px;
+	padding:5px;
+	float:left;
+	justify-content: center;
+	background-color: transparent;
+	font-size:20px;
+	
+}
+div.help
+{
+	width:10%;
+	height:125px;
+	padding:5px;
+	float:left;
+	justify-content: center;
+	padding-top: 20px;
+	background-color: transparent;
+	line-height: 160%;
+	
+}
+div.align1
+{
+	background-color:transparent;
+	align-items: center;
+	display: flex;
+	height:80px;
+	width:100%;
+	justify-content: center;
+}
+
+
+
+/*--------------------------------------------------*/
+
+/* Responsive parts */
+
+@media only screen and (max-width:600px)
+{
+div.left
+{
+	
+	width:100%;
+	
+}
+div.right
+{
+	
+	width:100%;
+	
+}
+div.middle
+{
+	width:100%;
+	
+}
+div.logoP
+{
+	width:100%;
+	background-color:green;
+	align-items: center;
+}
+
+div.name
+{
+	width:100%;
+	background-color:green;
+	
+}
+div.explore
+{
+	width:100%;
+	background-color:green;
+}
+
+div.Rights
+{
+	width:100%;
+	background-color:green;
+	
+}
+
+div.pay
+{
+	width:100%;
+	background-color:green;
+}
+
+div.socialM
+{
+	width:100%;
+	background-color:green;
+	
+}
+div.help
+{
+	width:100%;
+	background-color:green;
+	
+}
+div.buttonGroup
+{
+	width:100%;
+	background-color:green;
+}
+.mySlides ,.slideshow-container,.prev, .next ,.text ,.slidediv
+{
+	width:100%;
+	display: flex;
+	
+}
+
+
+/*--------------------------------------------------*/

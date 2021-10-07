@@ -1,0 +1,303 @@
+<html>
+<head>
+		<link rel="stylesheet" href="CSS/AdminStyles.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="JavaScript/AdminScript.js"></script>
+</head>
+<body>
+<!-- Header Part -->
+		<div class="bigDiv">
+				<div class="logo">
+					<img src="Images/Logo.png" alt="MainLogo" id="logo">
+				</div>
+				<div class="name">
+					<h1>TRAVEL PLANNER.CO</h1>
+				</div>
+				<div class="manage">
+					<div class="adminlogo">
+						<img src="Images/AdminLogo.png" alt="MainLogo" id="logoA">
+					</div>
+					<div class="dropdown">
+						  <button onclick="myFunction()" class="dropbtn">Manage</button>
+								  <div id="myDropdown" class="dropdown-content">
+										<a href="#home">View Profile</a>
+										<a href="#about">Logout</a>
+								  </div>
+					</div>
+					
+				</div>
+		</div>
+
+	<div class="bigDiv">
+			<div class="btn-group">
+					<a href="AdminProductList.html"><button class="button buttonrad ">View Hotel & Room</button></a>
+					<button class="button buttonrad ">Add Hotel & Room Types</button>
+					<button class="button buttonrad ">Manage Payment</button>
+					<button class="button buttonrad ">Reports</button>
+					<button class="button buttonrad ">User Feedback & complains</button>
+			</div>
+	</div>
+<div><hr></div>
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+<!-- Content Part -->
+<div class="left">
+		<form>
+			<table border="0" cellpadding="10" cellspacing="0" width="100%">
+				<tr>
+					<td colspan="2"><label>Hotel</label><hr id="hr1"></td>
+				</tr>
+
+
+				<tr>
+					<td>Hotel Name</td>
+					<td><input type="text" id="Hname" class="inputC" required></td>
+				</tr>
+				<tr>
+					<td>Hotel Title</td>
+					<td><input type="text" id="Htitle" class="inputC" required></td>
+				</tr>
+				<tr>
+					<td>Select Grade</td>
+					<td>
+						<select>
+								<option>5 Star</option>
+								<option>4 Star</option>
+								<option>3 Star</option>
+								<option>2 Star</option>
+								<option>1 Star</option>
+						</select>
+					</td>
+				</tr>
+				
+							<tr>
+					<td>Select Status</td>
+					<td>
+						<select>
+								<option>Select.........</option>
+								<option></option>
+								<option></option>
+								<option></option>
+								<option></option>
+						</select>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>Hotel Location</td>
+					<td><input type="text" id="address" placeholder="Address" class="inputC" required ></td>
+				</tr>
+				
+				<tr>
+					<td></td>
+					<td><input type="text" id="city" placeholder="City" class="inputC" required>
+						<input type="text" id="address" placeholder="State/Province" class="inputC" required>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>Hotel Contact No</td>
+					<td><input type="text" id="PhoneNo" class="inputC" required></td>
+				</tr>
+				
+				<tr>
+					<td>Hotel Email</td>
+					<td><input type="text" id="Email" class="inputC" required></td>
+				</tr>
+				
+				
+				<td>Hotel Features</td>
+				<td><textarea rows="10" cols="50" required>
+				</textarea></td>
+				
+				<tr>
+					<td>Add Hotel Images</td>
+					<td><input type="file" name="pic" accept="image/*" required>
+				</tr>
+
+				<tr>
+					<td colspan="2"><label>Room</label><hr id="hr1"></td>
+					
+				</tr>
+
+				<tr>
+					<td>Room Types</td>
+					<td>
+						<input type="checkbox" id="chek1" required>Standerd
+						<input type="checkbox" id="chek2" required>Dulexe
+						<input type="checkbox" id="chek3" required>Joint
+						<input type="checkbox" id="chek4" required>Penthouse
+						<input type="checkbox" id="chek5" required>Villa
+						<input type="checkbox" id="chek6" required>Executive Suite
+						<input type="checkbox" id="chek7" required>Standerd Suite
+
+					</td>
+					
+				</tr>
+				
+				<tr>
+					<td>Room Types Rate</td>
+					<td>
+						<table border="0" cellpadding="10" cellspacing="0" width="100%">
+						<tr>
+							<td>Standerd</td><td><input type="text" id="RoRate1" class="inputC"></td>
+						</tr>
+						<tr>
+							<td>Dulexe</td><td><input type="text" id="RoRate2" class="inputC"></td>
+						</tr>
+						<tr>
+							<td>Joint</td><td><input type="text" id="RoRate3" class="inputC"></td>
+						</tr>
+						<tr>
+							<td>Penthouse</td><td><input type="text" id="RoRate4" class="inputC"></td>
+						</tr>
+						<tr>
+							<td>Villa</td><td><input type="text" id="RoRate5" class="inputC"></td>
+						</tr>
+						<tr>
+							<td>Executive Suite</td><td><input type="text" id="RoRate7" class="inputC"></td>
+						</tr>
+						<tr>
+							<td>Standerd Suite</td><td><input type="text" id="RoRate8" class="inputC"></td>
+						</tr>
+						</table>
+					</td>
+					
+				</tr>
+				<tr>
+					<td>Room Images</td>
+					<td>
+						<table border="0" cellpadding="10" cellspacing="0" width="100%">
+						<tr>
+							<td>Standerd</td><td><input type="file" name="standpic" accept="image/*"></td>
+						</tr>
+						<tr>
+							<td>Dulexe</td><td><input type="file" name="dulexpic" accept="image/*"></td>
+						</tr>
+						<tr>
+							<td>Joint</td><td><input type="file" name="jointpic" accept="image/*"></td>
+						</tr>
+						<tr>
+							<td>Penthouse</td><td><input type="file" name="penthpic" accept="image/*"></td>
+						</tr>
+						<tr>
+							<td>Villa</td><td><input type="file" name="villapic" accept="image/*"></td>
+						</tr>
+						<tr>
+							<td>Executive Suite</td><td><input type="file" name="excutspic" accept="image/*"></td>
+						</tr>
+						<tr>
+							<td>Standerd Suite</td><td><input type="file" name="stanspic" accept="image/*"></td>
+						</tr>
+						</table>
+					</td>
+					
+				</tr>
+
+				<td>Room Features</td>
+				<td><textarea rows="10" cols="50" required>
+				</textarea></td>
+				
+				
+				<tr>
+					<td colspan="2" align="right"><hr><button type="reset" value="Reset" id="restB">Reset</button> 
+					<button type="submit" value="Submit" id="submitB">Submit</button></td>
+				
+				</tr>
+
+			</table>
+		</form>
+</div>
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+		<div class="left2">
+
+			<table border="1" cellpadding="10" cellspacing="0" width="100%">
+				<tr>
+				<td colspan="2">ROOM STATUS</td>
+				
+				</tr>
+				
+				<tr>
+				<td>Hotels</td>
+				<td>42</td>
+				
+				</tr>
+				<tr>
+				<td>Rooms</td>
+				<td>126</td>
+				
+				</tr>
+			
+				<tr>
+				<td>Users</td>
+				<td>1050</td>
+				
+				</tr>
+			
+			</table>
+			
+			<br><br>
+			<table border="1" cellpadding="10" cellspacing="0" width="100%">
+				<tr>
+				<td colspan="2">STATUS</td>
+				</tr>
+				
+				<tr>
+				<td>Standerd</td>
+				<td>40</td>
+				
+				</tr>
+				<tr>
+				<td>Dulexe Rooms</td>
+				<td>15</td>
+				
+				</tr>
+			
+				<tr>
+				<td>Joint Rooms</td>
+				<td>20</td>
+				
+				</tr>
+				
+				<tr>
+				<td>Villa</td>
+				<td>18</td>
+				
+				</tr>
+				
+				<tr>
+				<td>Penthouse</td>
+				<td>22</td>
+				
+				</tr>
+				
+				<tr>
+				<td>Executive Suite</td>
+				<td>22</td>
+				
+				</tr>
+				
+				<tr>
+				<td>Standerd Suite</td>
+				<td>35</td>
+				
+				</tr>
+			</table>
+		</div>
+<div class="left3"><hr></div>
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<!-- Footer Part -->
+
+	<div class="bigDiv">
+
+				<div class="name">@2019 TRAVEL PLANNER.CO</div>
+				<div class="buttonSec">
+					<button type="reset" value="Reset" id="supportB">Support</button> 
+					<button type="submit" value="Submit" id="helpB">Help</button>
+				</div>
+	</div>
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+</body>
+
+
+</html>

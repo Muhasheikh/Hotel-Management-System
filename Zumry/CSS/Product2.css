@@ -1,0 +1,368 @@
+
+/*Header Logo*/
+.logo
+{
+		display:block;
+		width:100px;
+		height:100px;
+}
+
+/*--------------------------------------------------*/
+
+/* Header Div parts */
+div.logoP
+{
+	background-color:white;
+	width:8%;
+	height:110px;
+	padding:5px;
+	float:left;
+	background-color: transparent;
+	
+	
+}
+h1
+{
+	font-family:'Gabriela';
+	font-size:50px;
+}
+
+div.name
+{
+	background-color:transparent;
+	width:38%;
+	height:110px;
+	float:left;
+	padding-bottom:20px;
+	color:black;
+	
+}
+div.Search
+{
+	background-color:transparent;
+	width:38%;
+	height:110px;
+	padding:5px;
+	float:left;
+	padding-top:25px;
+	color:white;
+	
+}
+div.align
+{
+	background-color:white;
+	align-items: center;
+	display: flex;
+	height:85px;
+	width:100%;
+	justify-content: center;
+	background-color: transparent;
+}
+div.padding
+{
+	padding-top: 15px;
+}
+/*--------------------------------------------------*/
+
+
+/* Header Navagation Buttons */
+
+div.buttonGroup
+{
+	background-color:transparent;
+	width:100%;
+	height:55px;
+	padding:5px;
+	float:left;
+	
+}
+.button {
+  background-color: #5C2018;
+  border-color:transparent;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  float: left;
+  opacity: 0.9;
+}
+
+.btnsize
+{
+    height:45px;
+    width:25%;
+}
+.buttonGroup .button:hover 
+{
+  background-color: #C2B9B0;
+  /*border-color: black;*/
+  opacity: 1;
+}
+
+/*--------------------------------------------------*/
+
+/*Footer content table icon images*/
+img.Op1
+{
+  max-width: 40px;
+  height: 40px;
+}
+
+img.Op2
+{
+  max-width: 50px;
+  height: 40px;
+}
+img.star
+{
+  max-width:50px;
+  height: 50px;
+}
+
+/*--------------------------------------------------*/
+
+
+/*Search Bar*/
+#Sch input[type=text]
+{
+	  float: right;
+	  padding: 6px;
+	  border: none;
+	  margin-top: 8px;
+	  margin-right: 16px;
+	  font-size: 17px;
+	  text-align:left;
+}
+/*--------------------------------------------------*/
+
+/*All Button*/
+button
+{
+		padding:5px 5px;
+		width:100px;
+		background-color:#302f2b;
+		color:white;
+		
+	
+	
+}
+
+.btn
+{
+		padding:5px 5px;
+		width:120px;
+			
+}
+
+#bt1
+{
+	background-color:#1384d4;
+}
+
+#bt2
+{
+	background-color:#1384d4;
+}
+
+#btn3
+{
+		padding:5px 5px;
+		height:25px;
+		width:30px;
+		
+}
+.otherallButton
+{
+	border:none;
+}
+
+/*--------------------------------------------------*/
+
+/* Background images*/
+
+* {box-sizing: border-box}
+
+
+#BGI
+{
+	background-image: url("../Images/BG4.jpg");
+	background-size: cover;
+	height:100%;
+	width:100%;
+	z-index:0;
+} 
+
+/*--------------------------------------------------*/
+/* HyperLinks*/
+a
+{
+	text-decoration:none;
+	color:blue;
+}
+/*--------------------------------------------------*/
+
+/* Footer Div parts */
+
+div.explore
+{
+	
+	width:10%;
+	height:125px;
+	padding:5px;
+	float:left;
+	justify-content: center;
+	padding-top: 0px;
+	background-color: transparent;
+	font-size:20px;
+	line-height: 160%;
+}
+
+div.Rights
+{
+	
+	width:30%;
+	height:125px;
+	padding:5px;
+	float:left;
+	justify-content: center;
+	padding-top: 50px;
+	background-color: transparent;
+	font-size:20px;
+	
+}
+
+div.pay
+{
+	
+	width:30%;
+	height:125px;
+	padding:5px;
+	float:left;
+	justify-content: center;
+	padding-top: 25px;
+	padding-left:20px;
+	background-color: transparent;
+}
+
+div.socialM
+{
+	width:20%;
+	height:125px;
+	padding:5px;
+	float:left;
+	justify-content: center;
+	background-color: transparent;
+	font-size:20px;
+	
+}
+div.help
+{
+	width:10%;
+	height:125px;
+	padding:5px;
+	float:left;
+	justify-content: center;
+	padding-top: 20px;
+	background-color: transparent;
+	line-height: 160%;
+	
+}
+div.align1
+{
+	align-items: center;
+	display: flex;
+	height:80px;
+	width:100%;
+	justify-content: center;
+	background-color: transparent;
+}
+
+
+
+/*--------------------------------------------------*/
+/* Heder and Footer Separate Div */
+
+
+/*--------------------------------------------------*/
+/* Responsive parts */
+
+@media only screen and (max-width:600px)
+{
+div.left
+{
+	
+	width:100%;
+	
+}
+div.right
+{
+	
+	width:100%;
+	
+}
+div.middle
+{
+	width:100%;
+	
+}
+div.logoP
+{
+	width:100%;
+	background-color: transparent;
+	align-items: center;
+}
+
+div.name
+{
+	width:100%;
+	background-color: transparent;
+	
+}
+div.explore
+{
+	width:100%;
+	background-color: transparent;
+}
+
+div.Rights
+{
+	width:100%;
+	background-color: transparent;
+	
+}
+
+div.pay
+{
+	width:100%;
+	background-color: transparent;
+}
+
+div.socialM
+{
+	width:100%;
+	background-color: transparent;
+	
+}
+div.help
+{
+	width:100%;
+	background-color: transparent;
+	
+}
+div.buttonGroup
+{
+	width:100%;
+	background-color: transparent;
+}
+.mySlides ,.slideshow-container,.prev, .next ,.text ,.slidediv
+{
+	width:100%;
+	display: flex;
+	background-color: transparent;
+	
+}
+
+
+/*--------------------------------------------------*/
